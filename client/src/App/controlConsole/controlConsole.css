@@ -1,0 +1,35 @@
+.controlConsole {
+
+    .controlConsole-lable{
+        display: inline-block;
+        min-width: 200px;
+    }
+
+    .controlConsole-shipType{
+        display: inline-flex;
+    }
+
+    .controlConsole-weight{
+        margin: 20px 0;
+    }
+
+    .controlConsole-select{
+        min-width: 15vw;
+        padding-left: unset;
+        color: black;
+    }
+
+    .controlConsole-input{
+        height: 38px;
+        width: 280px;
+    }
+
+    .controlConsole-search{
+        height: 44px;
+        width: 100px;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

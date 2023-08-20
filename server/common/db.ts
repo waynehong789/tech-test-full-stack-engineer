@@ -1,5 +1,5 @@
-const { createPool } = require('mysql');
-const { promisify } = require('util');
+import { QueryFunction, createPool } from 'mysql';
+import { promisify } from 'util';
 
 const {
     IS_DOCKER,
@@ -33,6 +33,6 @@ pool.getConnection((err, connection) => {
     return;
 })
 
-pool.query = promisify(pool.query);
+pool.query  = promisify(pool.query) as unknown as QueryFunction;
 
-module.exports = pool;
+export default pool;
